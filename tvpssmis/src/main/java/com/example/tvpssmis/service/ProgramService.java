@@ -55,7 +55,7 @@ public class ProgramService {
         programDAO.delete(programId);
     }
     @Transactional
-    public int getProgramCount() {
+    public long getProgramCount() {
         return programDAO.countPrograms();
     }
 

@@ -1,4 +1,4 @@
-package com.example.tvpssmis.service.application;
+package com.example.tvpssmis.service;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

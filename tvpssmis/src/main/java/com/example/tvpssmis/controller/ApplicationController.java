@@ -14,7 +14,7 @@ import com.example.tvpssmis.service.ApplicationService;
 import com.example.tvpssmis.entity.User;
 import com.example.tvpssmis.repository.UserRepository;
 import com.example.tvpssmis.service.ProgramService;
-import com.example.tvpssmis.service.application.ApplicationDAO;
+import com.example.tvpssmis.service.ApplicationDAO;
 
 @Controller
 @RequestMapping("/application")
