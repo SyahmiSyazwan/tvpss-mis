@@ -1,4 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Student Application Form</title>
@@ -10,8 +11,7 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <!-- Sidebar -->
-    <style><%@include file="/WEB-INF/views/css/sidebarsxnavbar.css"%></style>
-    <style><%@include file="/WEB-INF/views/css/sidebars.css"%></style>
+
     <!-- Icon Scout -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <style>
@@ -104,11 +104,10 @@
         }
     </style>
 </head>
-<<<<<<< HEAD
 <body>
     <h2>Student Application Form</h2>
     <form action="${pageContext.request.contextPath}/application/submitApplication" method="post">
-=======
+
 
 <body> 
     <div class="d-flex" style="min-height: 100vh;">
@@ -146,8 +145,7 @@
         </header>
     <div class ="content-container">
     <h1>Student Application Form</h1>
-    <form action="submitApplication" method="post">
->>>>>>> refs/remotes/upstreamkev/main
+    <form action="${pageContext.request.contextPath}/application/submitApplication" method="post">
         <label for="userId">User ID:</label>
         <input type="text" id="userId" name="userId" required><br><br>
 

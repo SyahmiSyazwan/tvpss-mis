@@ -7,7 +7,8 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = {
 	"com.example.tvpssmis.config",
 	"com.example.tvpssmis.controller",
-	"com.example.tvpssmis.service"
+	"com.example.tvpssmis.service",
+	"com.example.tvpssmis.repository"
 })
 public class RootConfig {
 
