@@ -1,15 +1,16 @@
 package com.example.tvpssmis.service;
 
-import com.example.tvpssmis.entity.Program;
-import com.example.tvpssmis.entity.Studio;
-import com.example.tvpssmis.service.equipment.ProgramDAO;
-import com.example.tvpssmis.service.equipment.StudioDAO;
+import java.util.List;
+
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-import java.util.List;
+import com.example.tvpssmis.entity.Program;
+import com.example.tvpssmis.entity.Studio;
+import com.example.tvpssmis.service.equipment.ProgramDAO;
+import com.example.tvpssmis.service.equipment.StudioDAO;
 
 @Service
 public class ProgramService {
@@ -54,7 +55,7 @@ public class ProgramService {
         programDAO.delete(programId);
     }
     @Transactional
-    public long getProgramCount() {
+    public int getProgramCount() {
         return programDAO.countPrograms();
     }
 
