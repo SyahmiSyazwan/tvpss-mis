@@ -10,14 +10,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.tvpssmis.entity.Program;
 import com.example.tvpssmis.entity.StudentApplication;
-<<<<<<< HEAD
 import com.example.tvpssmis.service.ApplicationService;
-=======
 import com.example.tvpssmis.entity.User;
 import com.example.tvpssmis.repository.UserRepository;
 import com.example.tvpssmis.service.ProgramService;
 import com.example.tvpssmis.service.application.ApplicationDAO;
->>>>>>> refs/remotes/upstreamkev/main
 
 @Controller
 @RequestMapping("/application")

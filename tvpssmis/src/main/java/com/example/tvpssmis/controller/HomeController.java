@@ -96,7 +96,7 @@ public class HomeController {
 	
 	@GetMapping("/students/form")
 	public ModelAndView studentForm() {
-		ModelAndView modelAndView = new ModelAndView("studentApplication/StudentForm");
+		ModelAndView modelAndView = new ModelAndView("studentApplication/studentApplicationForm");
 		return modelAndView;
 	}
 	

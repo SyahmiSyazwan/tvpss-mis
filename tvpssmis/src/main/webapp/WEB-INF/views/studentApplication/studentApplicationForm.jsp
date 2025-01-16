@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Student Application Form</h2>
-    <form action="submitApplication" method="post">
+    <form action="${pageContext.request.contextPath}/application/submitApplication" method="post">
         <label for="userId">User ID:</label>
         <input type="text" id="userId" name="userId" required><br><br>
 
