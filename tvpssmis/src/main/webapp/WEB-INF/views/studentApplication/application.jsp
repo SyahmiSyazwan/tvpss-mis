@@ -53,10 +53,10 @@
                     <c:when test="${not empty applications}">
                       <c:forEach var="application" items="${applications}">
                         <tr>
-                          <td>${application.applicationId}</td>
-                          <td>${application.programId}</td>
+                          <td>${application.application_Id}</td>
+                          <td>${application.programID}</td>
                           <td>${application.applyDate}</td>
-                          <td>${application.interests}</td>
+                          <td>${application.interest}</td>
                           <td>${application.skills}</td>
                           <td>
                             <span
@@ -68,13 +68,13 @@
                           <td>
                             <div class="btn-group" role="group">
                               <form method="post" action="${pageContext.request.contextPath}/studentApplication/accept" style="display:inline;">
-                                <input type="hidden" name="applicationId" value="${application.applicationId}" />
+                                <input type="hidden" name="applicationId" value="${application.application_Id}" />
                                 <button type="submit" class="btn btn-sm btn-success">
                                   <i class="fas fa-check"></i>
                                 </button>
                               </form>
                               <form method="post" action="${pageContext.request.contextPath}/studentApplication/reject" style="display:inline;">
-                                <input type="hidden" name="applicationId" value="${application.applicationId}" />
+                                <input type="hidden" name="applicationId" value="${application.application_Id}" />
                                 <button type="submit" class="btn btn-sm btn-danger">
                                   <i class="fas fa-times"></i>
                                 </button>

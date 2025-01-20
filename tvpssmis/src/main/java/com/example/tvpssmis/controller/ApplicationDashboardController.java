@@ -30,7 +30,7 @@ public class ApplicationDashboardController {
         for(StudentApplication application : applications) {
             int numByStatus = applicationDAO.findByStatus(application.getStatus()).size();
             
-            applicationOverview.add(new ApplicationOverview(application.getApplicationID(), numByStatus));
+            applicationOverview.add(new ApplicationOverview(application.getApplication_Id(), numByStatus));
         }
         
         model.addAttribute("totalApplications", totalApplication);

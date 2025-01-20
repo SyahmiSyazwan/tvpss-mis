@@ -5,13 +5,13 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name= "student_app")
+@Table(name= "student_application")
 public class StudentApplication implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "application_id")
-	private int applicationID;
+	private int application_Id;
 	
 	@ManyToOne
 	@JoinColumn(name = "user_id", nullable = false)
@@ -37,10 +37,10 @@ public class StudentApplication implements Serializable{
 	// Default constructor
     public StudentApplication() {}
 
-	public StudentApplication(int applicationID, User user, Program programID, Date applyDate, String status,
+	public StudentApplication(int application_Id, User user, Program programID, Date applyDate, String status,
 			String interest, String skills) {
 		super();
-		this.applicationID = applicationID;
+		this.application_Id = application_Id;
 		this.user = user;
 		this.programID = programID;
 		this.applyDate = applyDate;
@@ -49,14 +49,14 @@ public class StudentApplication implements Serializable{
 		this.skills = skills;
 	}
 
-	public int getApplicationID() {
-		return applicationID;
+	public int getApplication_Id() {
+		return application_Id;
 	}
 
 
 
-	public void setApplicationID(int applicationID) {
-		this.applicationID = applicationID;
+	public void setApplication_Id(int application_Id) {
+		this.application_Id = application_Id;
 	}
 
 
@@ -134,7 +134,7 @@ public class StudentApplication implements Serializable{
 	@Override
 	public String toString() {
 		return "StudentApplication "+ "["
-				+ "applicationID=" + applicationID + ", "
+				+ "application_Id=" + application_Id + ", "
 				+ "user=" + user + ", "
 				+ "programID=" + programID + ", "
 				+ "applyDate=" + applyDate + ", "
